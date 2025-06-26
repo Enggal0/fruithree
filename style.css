@@ -1,0 +1,181 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: montserrat, poppins;
+    background-color: #f8f9fa; /* Light background */
+}
+
+main {
+    flex: 1; /* Ensures main content takes available space pushing footer down */
+}
+
+/* Navbar specific styles */
+.navbar-brand img {
+    height: 70px; /* Adjust as needed */
+}
+
+.nav-tabs .nav-link {
+    border: none; /* Remove default tab border */
+    margin: 0 5px;
+    padding: 10px 15px;
+    border-radius: 8px; /* Slightly rounded corners for nav links */
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #28a745; /* Bootstrap green for active tab */
+    color: white !important; /* Force white text */
+    border-color: #28a745; /* Match border color */
+}
+
+.nav-tabs .nav-link:not(.active):hover {
+    background-color: rgba(40, 167, 69, 0.1); /* Light green hover for inactive */
+    color: #28a745 !important;
+}
+
+.nav-tabs .nav-link.btn-success {
+    background-color: #28a745 !important;
+    border: none;
+}
+
+.nav-tabs .nav-link.btn-success:hover {
+    background-color: #218838 !important; /* Darker green on hover */
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding-right: 2.5rem; /* Space for the icon */
+}
+
+.search-box .bi-search {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #6c757d; /* Muted color for the icon */
+}
+
+/* Product Card styles (for Etalase) */
+.menu-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title.text-success {
+    color: #28a745 !important;
+}
+
+.fs-4.fw-bold.text-success {
+    color: #28a745 !important;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Contact Form Container (from previous custom CSS) */
+.contact-form-container { /* This class is no longer explicitly used with Bootstrap cards, but keep if you prefer it */
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40; /* Dark gray */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+footer .container .row {
+    margin-bottom: 20px;
+}
+
+footer h5 {
+    color: #28a745; /* Green heading for footer sections */
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #adb5bd; /* Lighter grey for text */
+}
+
+footer a {
+    color: white;
+    font-size: 1.5rem; /* Larger icons */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #28a745; /* Green on hover for icons */
+}
+
+footer .bi {
+    vertical-align: middle;
+}
+
+footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 1.5rem 0;
+}
+
+footer .mb-0 {
+    font-size: 0.85rem;
+    color: #6c757d; /* Even lighter grey for copyright */
+}
+
+/* Empty state messages (Cart, Pesanan Saya, History) */
+.alert.alert-info {
+    background-color: #e2f4f8; /* Light blue */
+    border-color: #b8e7f3;
+    color: #0c5460;
+}
+
+.alert.alert-info .bi-info-circle-fill {
+    color: #17a2b8; /* Bootstrap info blue */
+}
+
+.text-secondary {
+    color: #6c757d !important;
+}
+
+/* Hero Section Specific */
+.hero-section {
+    position: relative;
+    overflow: hidden; /* Ensures the background image doesn't overflow */
+    color: white; /* Text color for content on the hero */
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+    z-index: 0;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1; /* Ensures text is above the overlay */
+}
+
+/* Anda bisa menambahkan efek paralaks atau lainnya di sini jika diinginkan */
